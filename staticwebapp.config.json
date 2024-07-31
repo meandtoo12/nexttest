@@ -1,0 +1,16 @@
+{
+    "routes": [
+        {
+            "route": "/profile*",
+            "allowedRoles": ["authenticated"]
+        },
+        {
+            "route": "/api/auth/logout",
+            "redirect": "https://mango-beach-0ebbf9310.5.azurestaticapps.net/",
+            "allowedRoles": [
+              "anonymous",
+              "authenticated"
+            ]
+          }
+    ]
+}
